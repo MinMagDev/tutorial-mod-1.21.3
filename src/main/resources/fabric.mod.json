@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Tutorial Mod, to learn modding,",
+	"authors": [
+		"Minmag"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"minmag.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"minmag.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"minmag.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
