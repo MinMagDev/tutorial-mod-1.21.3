@@ -1,6 +1,7 @@
 package minmag.tutorialmod;
 
 import minmag.tutorialmod.block.ModBlocks;
+import minmag.tutorialmod.item.ModItemGroups;
 import minmag.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroup();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
