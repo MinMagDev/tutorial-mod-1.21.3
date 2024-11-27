@@ -1,12 +1,12 @@
 package minmag.tutorialmod;
 
+import minmag.tutorialmod.block.ModBlocks;
 import minmag.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-//Very Important Comment
 public class TutorialMod implements ModInitializer {
 	public static final String MOD_ID = "tutorial-mod";
 
@@ -15,5 +15,6 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
